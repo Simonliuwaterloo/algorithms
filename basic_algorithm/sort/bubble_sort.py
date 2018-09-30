@@ -6,7 +6,7 @@ import numpy as np
 raw_data = list()
 for n in range(0,len(list(pd.read_csv('data.txt')))):
     raw_data.append(int(list(pd.read_csv('data.txt'))[n]))
-print(raw_data)
+
 
 
 count = 0
