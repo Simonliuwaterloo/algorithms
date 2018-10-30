@@ -2,6 +2,7 @@
 from math import log
 import operator
 import matplotlib.pyplot as plt
+
 def createDataSet():
     dataSet = [[1, 1, 'yes'],
     [1, 1, 'yes'],
@@ -77,7 +78,4 @@ def createTree (dataSet, labels):
         myTree[bestFeatLabel][value] = createTree(splitDataSet\
                                                       (dataSet, bestFeat, value), subLabels)
     return myTree
-myDat, labels = createDataSet()
-mytree = createTree(myDat, labels)
-print(mytree)
 
